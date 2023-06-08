@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>playstation Store</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img class="logo" src="./img/logo.png" alt="logo">
+            <nav>
+                <ul id="menu-list">
+                    <li class="nav-li" ><a class="nav-link">consoles</a></li>
+                    <li class="nav-li"><a class="nav-link">Assessórios</a></li>
+                    <li class="nav-li"><a class="nav-link">controles</a></li>
+                    <li class="nav-li"><a class="nav-link">outros</a></li>
+                </ul>
+            </nav>
+<img src="./img/menu.png" class="menu-icon" alt="botao-menu" onclick="showMenu()">
+
+        </div>
+
+        <div class="row">
+            <div class="coloum-1">
+                <h2>PS5 Dualshok</h2>
+                <h3>Wireless Controller for PlayStation</h3>
+                <p>Controle Oringinal</p>
+                <h4>R$ 222,50</h4>
+                <button class="buy">Comprar agora <img src="./img/arrow.png" alt="seta"></button>
+            </div>
+
+            <div class="coloum-2">
+                <img class="controller" src="./img/controller.png" alt="controle">
+                <div class="color-box"></div>
+                <button class="add-cart">
+                    <img src="./img/add.png" alt="adicionar-ao-carrinho">
+                </button>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <img src="./img/fb.png" alt="">
+            <img src="./img/ig.png" alt="">
+            <img src="./img/tw.png" alt="">
+        </div>
+
+
+    </div>
+
+</body>
+<script>
+const menuList = document.getElementById("menu-list")
+menuList.style.maxHeight = "0px"
+
+function showMenu(){
+    if(menuList.style.maxHeight == "0px"){
+        menuList.style.maxHeight = "120px"
+    } else {
+        menuList.style.maxHeight = "0px"
+    }
+}
+
+
+        
+    
+
+</script>
+
+
+
+</html>
